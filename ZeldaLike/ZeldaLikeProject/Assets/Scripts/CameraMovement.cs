@@ -12,7 +12,7 @@ public class CameraMovement : MonoBehaviour
     // LateUpdate happens last in the updates, so the player moving happens first followed by the camera
     void LateUpdate()
     {
-        if(transform.position != target.position)
+        if (transform.position != target.position)
         {
             Vector3 targetPosition = new Vector3(target.position.x, target.position.y, transform.position.z);
 
