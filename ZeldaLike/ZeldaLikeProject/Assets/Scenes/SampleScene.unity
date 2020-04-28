@@ -292,6 +292,100 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31a30d203fd033c48941ee2253507afb, type: 3}
+--- !u!1001 &405035003
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2030007172110446867, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: dialougeBox
+      value: 
+      objectReference: {fileID: 784451699}
+    - target: {fileID: 2030007172110446867, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: dialougeText
+      value: 
+      objectReference: {fileID: 1166200799}
+    - target: {fileID: 2030007172110446867, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 784451699}
+    - target: {fileID: 2030007172110446867, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 1166200799}
+    - target: {fileID: 2030007172110446867, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: dialogue
+      value: Recovery Spring
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650628140243455344, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: m_Name
+      value: TowerSign (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4a784da62038acc4eab690b812084679, type: 3}
 --- !u!114 &566022312 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 248710305, guid: 31a30d203fd033c48941ee2253507afb,
@@ -490,90 +584,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784451699}
   m_CullTransparentMesh: 0
---- !u!1001 &866256726
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2030007172110446867, guid: 4a784da62038acc4eab690b812084679,
-        type: 3}
-      propertyPath: dialougeBox
-      value: 
-      objectReference: {fileID: 784451699}
-    - target: {fileID: 2030007172110446867, guid: 4a784da62038acc4eab690b812084679,
-        type: 3}
-      propertyPath: dialougeText
-      value: 
-      objectReference: {fileID: 1166200799}
-    - target: {fileID: 2030007172110446867, guid: 4a784da62038acc4eab690b812084679,
-        type: 3}
-      propertyPath: dialouge
-      value: Recovery Spring
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650628140243455344, guid: 4a784da62038acc4eab690b812084679,
-        type: 3}
-      propertyPath: m_Name
-      value: SpringSign
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 9.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793028329056529636, guid: 4a784da62038acc4eab690b812084679,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4a784da62038acc4eab690b812084679, type: 3}
 --- !u!1 &1043078657
 GameObject:
   m_ObjectHideFlags: 0
@@ -47978,6 +47988,21 @@ PrefabInstance:
       propertyPath: dialougeText
       value: 
       objectReference: {fileID: 1166200799}
+    - target: {fileID: 2030007172110446867, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 784451699}
+    - target: {fileID: 2030007172110446867, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 1166200799}
+    - target: {fileID: 2030007172110446867, guid: 4a784da62038acc4eab690b812084679,
+        type: 3}
+      propertyPath: dialogue
+      value: Tower Ahead
+      objectReference: {fileID: 0}
     - target: {fileID: 2650628140243455344, guid: 4a784da62038acc4eab690b812084679,
         type: 3}
       propertyPath: m_Name
