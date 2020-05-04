@@ -74,10 +74,5 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(-transform.right);
     }
 
-    private void SpeedUp()
-    {
-      
-    }
-
     
 }
