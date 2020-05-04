@@ -157,11 +157,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player1
       objectReference: {fileID: 0}
-    - target: {fileID: 4871402949559737165, guid: d1e71a562dc274a4996e7a074fe32a48,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4871402949559737167, guid: d1e71a562dc274a4996e7a074fe32a48,
         type: 3}
       propertyPath: m_LocalPosition.x
