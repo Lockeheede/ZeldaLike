@@ -16,7 +16,7 @@ public class Sign : MonoBehaviour
     {
         if (playerInRange)
         {
-            if (Input.GetButtonDown("P1_Action") || Input.GetButtonDown("P2_Action"))
+            if (Input.GetButtonDown("P1_Interact") || Input.GetButtonDown("P2_Interact"))
                 if (dialogueBox.activeInHierarchy)
                 {
                     dialogueBox.SetActive(false);
