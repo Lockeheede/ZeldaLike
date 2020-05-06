@@ -15,7 +15,7 @@ MonoBehaviour:
   target: {fileID: 4871402949559737167}
   smoothing: 0.6
   maxPosition: {x: 14.9, y: 12.97}
-  minPosition: {x: -10.4, y: -12.1}
+  minPosition: {x: -14.4, y: -12.1}
 --- !u!1 &4871402949559737162
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,7 +89,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 86294469
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7152930139536384079, guid: aaf8a27f34c361d48af8bcc3d7d62723,
     type: 3}
@@ -162,6 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cafa32d1b8912c64f9fef640b2ef98ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 0
   speed: 3
 --- !u!95 &4871402949559737164
 Animator:
@@ -207,12 +208,12 @@ PrefabInstance:
     - target: {fileID: 4262973958336191965, guid: 7f0c4ef3f977e8b4b8535d6dedabc14b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.44
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 4262973958336191965, guid: 7f0c4ef3f977e8b4b8535d6dedabc14b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 29.9
+      value: 7.1
       objectReference: {fileID: 0}
     - target: {fileID: 4262973958336191965, guid: 7f0c4ef3f977e8b4b8535d6dedabc14b,
         type: 3}

@@ -1,24 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public enum PlayerState
 {
     walk, 
     attack,
-    action,
+    interact,
     agility,
     special
 }
+
 public class PlayerMovement : MonoBehaviour
 {
+    // Change these via the Inspector instead of hard-coding.
+    [SerializeField] private string horizontalInputAxis = "P1_Horizontal";
+    [SerializeField] private string verticalInputAxis = "P1_Vertical";
+    [SerializeField] private string attackInput = "P1_Attack";
+
     public PlayerState currentState;
     public float speed;
     private Rigidbody2D myRigidBody;
     private Animator animator;
     private Vector3 change;
-    
 
     void Start()
     {
@@ -33,16 +36,17 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        change = Vector3.zero;
-        change.x = Input.GetAxisRaw("P1_Horizontal");
-        change.y = Input.GetAxisRaw("P1_Vertical");
-        //GetAxisRaw doesn't interpolate but instead goes directly into the value 0 - 1; not floaty, more snappy
+        // change = Vector3.zero;
+        // ^ Unnecessary since Input.GetAxisRaw will set x/y
+        // to 0 if there is no input anyway.
+        change.x = Input.GetAxisRaw(horizontalInputAxis);
+        change.y = Input.GetAxisRaw(verticalInputAxis);
+        // GetAxisRaw doesn't interpolate but instead goes directly into the value 0 - 1; not floaty, more snappy
 
-        if(Input.GetButtonDown("P1_Attack") && currentState != PlayerState.attack)
+        if (Input.GetButtonDown(attackInput) && currentState != PlayerState.attack)
         {
             StartCoroutine(AttackCo());
         }
-
         else if (currentState == PlayerState.walk)
         {
             //Debug.Log(change); Use to see what happens when you use the Axis
@@ -79,32 +83,4 @@ public class PlayerMovement : MonoBehaviour
     {
         myRigidBody.MovePosition(transform.position + change * speed * Time.deltaTime);
     }
-
-    private void OnMovement(InputValue value)
-    {
-
-    }
-    private void OnMoveUp()
-    {
-        transform.Translate(transform.up);
-    }
-    private void OnMoveDown()
-    {
-        transform.Translate(-transform.up);
-    }
-    private void OnMoveRight()
-    {
-        transform.Translate(transform.right);
-    }
-    private void OnMoveLeft()
-    {
-        transform.Translate(-transform.right);
-    }
-
-    private void SpeedUp()
-    {
-      
-    }
-
-    
 }
