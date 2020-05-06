@@ -2,9 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.XR.Haptics;
 
+public enum PlayerState2
+{
+    walk,
+    attack,
+    action,
+    agility,
+    special
+}
 public class PlayerMovement1 : MonoBehaviour
 {
+    public PlayerState2 currentState2;
     public float speed;
     private Rigidbody2D myRigidBody;
     private Animator animator;
@@ -29,8 +39,27 @@ public class PlayerMovement1 : MonoBehaviour
         change.y = Input.GetAxisRaw("P2_Vertical");
         //GetAxisRaw doesn't interpolate but instead goes directly into the value 0 - 1; not floaty, more snappy
 
-        //Debug.Log(change); Use to see what happens when you use the Axis
-        UpdateAnimationAndMove();
+        if (Input.GetButtonDown("P2_Attack") && currentState2 != PlayerState2.attack)
+        {
+            StartCoroutine(AttackCo2());
+        }
+
+        else if (currentState2 == PlayerState2.walk)
+        {
+            //Debug.Log(change); Use to see what happens when you use the Axis
+            UpdateAnimationAndMove();
+        }
+    }
+
+    private IEnumerator AttackCo2()
+    {
+        animator.SetBool("attacking2", true);
+        currentState2 = PlayerState2.attack;
+        yield return null;
+        animator.SetBool("attacking2", false);
+        yield return new WaitForSeconds(.25f);
+        currentState2 = PlayerState2.walk;
+
     }
 
     void UpdateAnimationAndMove()

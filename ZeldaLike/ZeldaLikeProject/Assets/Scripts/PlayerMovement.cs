@@ -3,8 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+public enum PlayerState
+{
+    walk, 
+    attack,
+    action,
+    agility,
+    special
+}
 public class PlayerMovement : MonoBehaviour
 {
+    public PlayerState currentState;
     public float speed;
     private Rigidbody2D myRigidBody;
     private Animator animator;
@@ -29,8 +38,26 @@ public class PlayerMovement : MonoBehaviour
         change.y = Input.GetAxisRaw("P1_Vertical");
         //GetAxisRaw doesn't interpolate but instead goes directly into the value 0 - 1; not floaty, more snappy
 
-        //Debug.Log(change); Use to see what happens when you use the Axis
-        UpdateAnimationAndMove();
+        if(Input.GetButtonDown("P1_Attack") && currentState != PlayerState.attack)
+        {
+            StartCoroutine(AttackCo());
+        }
+
+        else if (currentState == PlayerState.walk)
+        {
+            //Debug.Log(change); Use to see what happens when you use the Axis
+            UpdateAnimationAndMove();
+        }
+    }
+
+    private IEnumerator AttackCo()
+    {
+        animator.SetBool("attacking", true);
+        currentState = PlayerState.attack;
+        yield return null;
+        animator.SetBool("attacking", false);
+        yield return new WaitForSeconds(.20f);
+        currentState = PlayerState.walk;
     }
 
     void UpdateAnimationAndMove()
